@@ -1,8 +1,11 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
+        <h1>{{ message }}</h1>
+
+    <button v-on:click="showJoke()">Make me laugh</button>
     <h2>{{ joke.setup }} </h2>
     <h2>{{ joke.punchline }} </h2>
+    
 
   </div>
 </template>
@@ -22,12 +25,14 @@ export default {
       setup: [],
     };
   },
-  created: function (joke) {
-    axios.get(`/api/jokes/3`).then((response) => {
-      console.log(response);
-      this.joke = response.data;
-    });
+  created: function () {},
+  methods: {
+    showJoke: function () {
+      axios.get(`/api/jokes/3`).then((response) => {
+        console.log(response);
+        this.joke = response.data;
+      });
+    },
   },
-  methods: {},
 };
 </script>
