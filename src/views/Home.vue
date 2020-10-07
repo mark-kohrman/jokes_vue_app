@@ -8,9 +8,11 @@
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">Click to hear the joke.</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" v-on:click="showJoke()">Make Me Laugh</a>
-                      <div>
+                        <p class="text-white-75 font-weight-light mb-5">Click to hear the joke</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" v-on:click="showJoke()">Joke me   </a>
+                    
+                      <div class="container">
+                        <br>
                         <h3 class="text text-white font-weight-bold">{{ joke.setup }} </h3>
                         <h5 class="text-white-75 font-weight-light mb-34">{{ joke.punchline }}</h5>
                       </div>
@@ -19,9 +21,6 @@
                 </div>
             </div>
         </header>
-  
-    
-
   </div>
 </template>
 
