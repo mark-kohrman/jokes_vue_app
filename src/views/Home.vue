@@ -9,21 +9,17 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 font-weight-light mb-5">Click to hear the joke.</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" v-on:click="showJoke()" href="#about">Make Me Laugh</a>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" v-on:click="showJoke()">Make Me Laugh</a>
                       <div>
-                        <p class="text-white-75 font-weight-light mb-34">{{ joke.setup }} </p>
-                        <p class="text-white-75 font-weight-light mb-34">{{ joke.punchline }}</p>
+                        <h3 class="text text-white font-weight-bold">{{ joke.setup }} </h3>
+                        <h5 class="text-white-75 font-weight-light mb-34">{{ joke.punchline }}</h5>
                       </div>
 
                     </div>
                 </div>
             </div>
         </header>
-        <h1>{{ message }}</h1>
-        <p>{{ subtext }}</p>
-
-    <h2>{{ joke.setup }} </h2>
-    <h3>{{ joke.punchline }} </h3>
+  
     
 
   </div>
@@ -38,7 +34,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "(APP)ropriate Jokes",
+      message: "(app)ropriate Jokes",
       subtext: "Click the button below to read a joke!",
       joke: [],
       punchline: [],
