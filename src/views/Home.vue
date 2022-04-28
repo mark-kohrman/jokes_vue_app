@@ -13,7 +13,7 @@
                     
                       <div class="container">
                         <br>
-                        <h3 class="text text-white font-weight-bold">{{ joke.joke }} </h3>
+                        <h3 class="text text-white font-weight-bold">{{ joke.joke }}</h3>
                       </div>
 
                     </div>
